@@ -1,0 +1,3 @@
+#: /tmp/cache/a1/2e/e99fa2983dd763df3d4fc2d8bd52.php:34
+msgid "Welcome XOOPS Cube Legacy!"
+msgstr "XOOPS Cube Legacyへようこそ！"

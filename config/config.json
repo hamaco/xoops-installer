@@ -1,0 +1,29 @@
+{
+	"parameters": {
+		"database.type"      : "mysql",
+		"database.structure" : "%installer_dir%/sql/mysql.structure.sql",
+		"database.data"      : "%installer_dir%/sql/mysql.data.sql",
+		"database.permanent_connection" : false,
+		"installer.template_dir" : "%installer_dir%/src/XoopsCube/Installer/Templates",
+		"installer.locale_dir" : "%installer_dir%/locale",
+		"config_filename"    : "%xoops_root_path%/mainfile.php",
+		"password_encryptor" : "XoopsCube\\Installer\\Security\\MD5PasswordEncryptor"
+	},
+	"requirement": {
+		"php_extension": [
+			"gd",
+			"gettext",
+			"mbstring",
+			"mysql"
+		],
+		"writable": [
+			"%xoops_root_path%/uploads/"
+		]
+	},
+	"writable": {
+		"writable": [
+			"%xoops_trust_path%/cache/",
+			"%xoops_trust_path%/templates_c/"
+		]
+	}
+}
