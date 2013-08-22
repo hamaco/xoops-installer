@@ -166,7 +166,7 @@ textdomain('messages');
      */
     private function testDatabaseConnection(Site $site)
     {
-        $dto = new ConfigrationTestDTO($this->config->getWritable());
+        $dto = new ConfigrationTestDTO($this->config->getWritables());
         $service = $this->get('service.database_connection_test');
         $service->test2($site->getDB(), $this->config, $dto);
 
